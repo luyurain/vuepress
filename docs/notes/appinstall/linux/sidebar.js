@@ -1,6 +1,6 @@
 module.exports = [
     {
-        title: "服务器常用环境安装",
+        title: "Linux操作系统安装",
         path: "/notes/appinstall/linux/linux",
     },
     {

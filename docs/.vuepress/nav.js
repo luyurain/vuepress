@@ -18,6 +18,12 @@ module.exports = [
             { text: 'Javascript', link: '/' },
           ]
         },
+        {
+          text: '其他',
+          items: [
+            { text: 'Git', link: '/notes/git/git' },
+          ]
+        },
       ],
     },
   ]

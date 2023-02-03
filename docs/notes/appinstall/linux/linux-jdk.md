@@ -2,6 +2,15 @@
 
 - notice：这里安装的是Oracle JDK
 
+## 环境声明
+
+- 本页面所有文档的实验、环境、工具、软件均基于CentOS 7.9 64bit操作系统进行
+- 为了避免安装过程中不必要的麻烦发生，建议先关闭防火墙
+
+```
+systemctl stop firewalld.service
+```
+
 ## 准备JDK安装包
 
 - 我这里下载的是jdk-8u181-linux-x64.tar.gz安装包，并将其直接放在了root目录下
