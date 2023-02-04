@@ -1,4 +1,4 @@
-# JDK(JAVA环境)安装
+# JDK在linux上的安装
 
 - notice：这里安装的是Oracle JDK
 

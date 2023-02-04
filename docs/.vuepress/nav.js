@@ -1,6 +1,9 @@
 // .vuepress/nav.js
 module.exports = [
-    {
+   {
+    text:'首页', link:'/'
+   },
+   {
       text: '安装指南',
       items:[
         {text: 'Linux' , link:'/notes/appinstall/linux/linux'},
@@ -13,9 +16,8 @@ module.exports = [
         {
           text: '基础',
           items: [
-            { text: 'HTML', link: '/' },
-            { text: 'CSS', link: '/' },
-            { text: 'Javascript', link: '/' },
+            { text: 'HTML/CSS', link: '/notes/html/htmlcss' },
+            { text: 'Javascript', link: '/notes/javascript/javascript' },
           ]
         },
         {

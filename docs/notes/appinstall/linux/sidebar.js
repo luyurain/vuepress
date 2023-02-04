@@ -4,7 +4,7 @@ module.exports = [
         path: "/notes/appinstall/linux/linux",
     },
     {
-        title: "JDK(JAVA环境)安装",
+        title: "JDK在linux上的安装",
         path: "/notes/appinstall/linux/linux-jdk",
     },
     {
