@@ -7,7 +7,7 @@ module.exports = [
       text: '安装指南',
       items:[
         {text: 'Linux' , link:'/notes/appinstall/linux/linux'},
-        {text: 'Windows' , link:'/notes/appinstall/windows/jdk'},
+        {text: 'Teamspeak3' , link:'/notes/appinstall/teamspeak3/teamspeak3'},
       ]
     },
     {
