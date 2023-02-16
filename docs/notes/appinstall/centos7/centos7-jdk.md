@@ -1,4 +1,4 @@
-# JDK在linux上的安装
+# JDK的安装
 
 - notice：这里安装的是Oracle JDK
 
@@ -62,7 +62,7 @@ export PATH JAVA_HOME CLASSPATH
 - 然后执行如下命令让环境变量生效
 
 ```
-soure /etc/profile
+source /etc/profile
 ```
 
 ## 验证JDK安装结果

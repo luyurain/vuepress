@@ -1,4 +1,4 @@
-# Linux操作系统安装
+# CentOS7的安装
 
 > [参考文档](https://www.bilibili.com/read/cv5884033?spm_id_from=333.999.0.0)
 
