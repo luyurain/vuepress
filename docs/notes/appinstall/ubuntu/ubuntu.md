@@ -1,12 +1,12 @@
-# Ubuntu使用指南
+# Ubuntu的安装、部署和配置
 
-## VM中ubuntud的安装
+## VM 中 Ubuntu 的安装
 
 - 还没有实操，暂略
 
-## 服务器上ubuntu的使用
+## 如何更新 Ubuntu Linux
 
-### 一、如何更新 Ubuntu Linux
+> 新的系统刚安装好，需要先更新一下软件包
 
 1. 命令：`sudo apt update && sudo apt upgrade -y`
 - 打开终端，输入命令：
@@ -40,8 +40,50 @@ apt list --upgradable
 
 - 所以区别是`sudo apt update`检查新软件包版本的可用性，而`sudo apt upgrade`实际上是安装新版本。
 
-### 二、Ubuntu的jdk安装
+## 在 Ubuntu 上安装 JDK
 
-- 略，方法同CentOS中jdk的安装
+### 一、安装
 
-### 三、安装nginx服务器
+- 我这里下载的是jdk-8u181-linux-x64.tar.gz安装包，并将其直接放在了root目录下
+
+- 在/usr/local/下创建java文件夹并进入
+
+```
+cd /usr/local/
+mkdir java
+cd java
+```
+
+- 将上面准备好的JDK安装包解压到/usr/local/java中即可
+
+```
+tar -zxvf /root/jdk-8u181-linux-x64.tar.gz -C ./
+```
+
+- 解压完之后，/usr/local/java目录中会出现一个jdk.1.8.0_181的目录
+
+### 二、配置环境变量
+
+- 编辑/etc/profile文件，在文件尾部加入如下JDK环境配置即可
+
+```
+JAVA_HOME=/usr/local/java/jdk1.8.0_181
+CLASSPATH=$JAVA_HOME/lib/
+PATH=$PATH:$JAVA_HOME/bin
+export PATH JAVA_HOME CLASSPATH
+```
+
+- 然后执行如下命令让环境变量生效
+
+```
+source /etc/profile
+```
+
+### 三、验证安装结果
+
+- 输入如下命令即可检查安装结果：
+
+```
+java -version
+javac
+```

@@ -5,9 +5,9 @@ module.exports = [
    },
    {
       text: '安装指南',
-      items:[
-        {text: 'CentOS7' , link:'/notes/appinstall/centos7/centos7'},
+      items:[       
         {text: 'Ubuntu' , link:'/notes/appinstall/ubuntu/ubuntu'},
+        {text: 'CentOS7' , link:'/notes/appinstall/centos7/centos7'},
         {text: 'Teamspeak3' , link:'/notes/appinstall/teamspeak3/teamspeak3'},
       ]
     },
