@@ -39,8 +39,8 @@
 
 ### init && clone
 - `git init` 在当前目录新建一个仓库
-- `git init` [project-name] 在一个目录下新建本地仓库
-- `git clone` [url] 克隆一个远程仓库
+- `git init [project-name]` 在一个目录下新建本地仓库
+- `git clone [url]` 克隆一个远程仓库
 
 ### diff
 - `git diff HEAD -- .` 查看最新本地版本库和工作区所有文件的区别
@@ -65,6 +65,11 @@
 - `git commit --amend` 快速将当前文件修改合并到最新的commit，不会产生新的commit。在提交commit后发现还有部分文件修改忘记提交了可以是用该命令
 - 加-m是指直接在后面写上版本的注释，不加-m的话会用一个vim打开文件让你写入massage，有未追踪的文件将会失败，需要add加入暂存区。
 
+### push
+- `git push` 将文件添加到远程仓库
+- `git push -f` 强制提交，当我们本地reset到旧的版本时，然后普通push会被拦截，因为此是本地HEAD指向比远程库还要旧
+- `git push origin [branch-name]` 推送当前本地分支到指定远程分支
+
 ### clean
 - `git clean -df` 加-d是指包含目录，加-f是指强制，删除所有未跟踪的文件
 
@@ -78,7 +83,15 @@
 ### reflog
 - `git reflog` 显示操作本地版本库的命令，包括commit和reset等，在回退版本以后又后悔找不到commit id了可以使用此命令查看历史
 
-### push
-- `git push` 将文件添加到远程仓库
-- `git push -f` 强制提交，当我们本地reset到旧的版本时，然后普通push会被拦截，因为此是本地HEAD指向比远程库还要旧
-- `git push origin [branch-name]` 推送当前本地分支到指定远程分支
+
+## 实际使用
+
+- 上传GitHub流程
+```
+//提交到暂存区
+git add . 或者git add -A .
+//添加到本地仓库
+git commit -m ""
+//添加到远程仓库
+git push
+```

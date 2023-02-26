@@ -42,7 +42,7 @@ apt list --upgradable
 
 ## 在 Ubuntu 上安装 JDK
 
-### 一、安装
+### 1、安装
 
 - 我这里下载的是jdk-8u181-linux-x64.tar.gz安装包，并将其直接放在了root目录下
 
@@ -62,7 +62,7 @@ tar -zxvf /root/jdk-8u181-linux-x64.tar.gz -C ./
 
 - 解压完之后，/usr/local/java目录中会出现一个jdk.1.8.0_181的目录
 
-### 二、配置环境变量
+### 2、配置环境变量
 
 - 编辑/etc/profile文件，在文件尾部加入如下JDK环境配置即可
 
@@ -79,7 +79,7 @@ export PATH JAVA_HOME CLASSPATH
 source /etc/profile
 ```
 
-### 三、验证安装结果
+### 3、验证安装结果
 
 - 输入如下命令即可检查安装结果：
 
